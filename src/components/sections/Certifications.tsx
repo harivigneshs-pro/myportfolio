@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, Calendar } from 'lucide-react';
+import {  Calendar } from 'lucide-react';
 import { portfolioData } from '../../data/portfolioData';
 import SectionHeader from '../ui/SectionHeader';
 import SkillIcon from '../ui/SkillIcon';

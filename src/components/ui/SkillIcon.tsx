@@ -9,7 +9,7 @@ interface SkillIconProps {
 }
 
 const SkillIcon: React.FC<SkillIconProps> = ({ iconName, size = 24, className = '', color = '#00E5FF' }) => {
-  const IconComponent = (Icons as Record<string, React.ComponentType<{ size?: number; className?: string; color?: string }>>)[iconName];
+  const IconComponent = (Icons as unknown as  Record<string, React.ComponentType<{ size?: number; className?: string; color?: string }>>)[iconName];
 
   if (!IconComponent) {
     return (
